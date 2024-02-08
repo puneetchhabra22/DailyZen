@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DailyZen" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.DailyZen" parent="Base.Theme.DailyZen" />
+
+    <style name="BG">
+        <item name="android:background">@color/Background</item>
+    </style>
+    <style name="CardBG">
+        <item name="android:background">@color/CardBgColor</item>
+        <item name="strokeColor">@color/BorderStroke</item>
+    </style>
+    <style name="Text">
+        <item name="android:textColor">@color/TextColor</item>
+    </style>
+    <style name="CTAButtonBG">
+        <item name="android:background">@color/CtaBtnBg</item>
+        <item name="backgroundColor">@color/CtaBtnBg</item>
+        <item name="cardBackgroundColor">@color/CtaBtnBg</item>
+        <item name="color">@color/CtaBtnBg</item>
+        <item name="android:textColor">@color/TextColor</item>
+    </style>
+    <style name="IconColor">
+        <item name="color">@color/TextColor</item>
+    </style>
+    <style name="BottomSheetBG">
+        <item name="android:background">@drawable/bottom_sheet_bg</item>
+    </style>
+</resources>

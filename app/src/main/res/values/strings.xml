@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DailyZen</string>
+    <string name="rv_footer_text">"That's the Zen for today! \nSee you tomorrow :)"</string>
+    <string name="bottomSheetTitle">Inspire your friends</string>
+    <string name="copyButtonText">Copy</string>
+    <string name="share_to">Share to</string>
+</resources>

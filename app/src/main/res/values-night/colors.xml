@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">#000000</color>
+    <color name="TextColor">#CFC4C4</color>
+    <color name="Background">#201A1B</color>
+    <color name="colorPrimaryDark">#201A1B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="CardBorder">#D7C1C3</color>
+    <color name="CardBgColor">#181212</color>
+    <color name="CtaBtnBg">#FFD9DD</color>
+    <color name="CtaItemColor">#2C1518</color>
+    <color name="FooterTextColor">#847374</color>
+    <color name="BottomSheetCopyBtnColor">#EA436B</color>
+    <color name="BottomSheetBG">#201A1B</color>
+    <color name="BottomSheetCopyBtnStroke">#847374</color>
+    <color name="BorderStroke">#524345</color>
+    <color name="BottomSheetDivider">#524345</color>
+    <color name="NextPrevButtons">#D7C1C3</color>
+    <color name="CTAButtons">#FFD9DD</color>
+</resources>

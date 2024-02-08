@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/BG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.DailyZenActivity">
+
+        <ImageButton
+            android:id="@+id/imageButtonLeft"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHor12"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVer4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_arrow_left" />
+
+        <ImageButton
+            android:id="@+id/imageButtonRight"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHor12"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVer96"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_arrow_right" />
+
+        <TextView
+            android:id="@+id/textViewDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Today"
+            style="@style/Text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHor12"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVer80"
+            app:layout_constraintStart_toEndOf="@+id/guidelineVer16"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHor12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVer96"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVer16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.16" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVer80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rVDailyZen"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guidelineVer96"
+            app:layout_constraintStart_toEndOf="@id/guidelineVer4"
+            app:layout_constraintTop_toBottomOf="@id/guidelineHor12"
+            tools:listitem="@layout/dz_card_item_share_or_send" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

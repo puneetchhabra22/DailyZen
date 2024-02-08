@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DailyZen" parent="Theme.Material3.DayNight.NoActionBar">
+<!--        &lt;!&ndash; Customize your dark theme here. &ndash;&gt;-->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="BG">
+        <item name="android:background">@color/Background</item>
+    </style>
+    <style name="CardBG">
+        <item name="android:background">@color/CardBgColor</item>
+        <item name="strokeColor">@color/BorderStroke</item>
+    </style>
+    <style name="Text">
+        <item name="android:textColor">@color/TextColor</item>
+    </style>
+    <style name="CTAButtonBG">
+        <item name="android:background">#5C3F43</item>
+        <item name="backgroundColor">#5C3F43</item>
+        <item name="color">#5C3F43</item>
+        <item name="cardBackgroundColor">#5C3F43</item>
+        <item name="android:textColor">@color/CtaBtnBg</item>
+    </style>
+    <style name="IconColor">
+        <item name="color">@color/CtaBtnBg</item>
+    </style>
+    <style name="BottomSheetBG">
+        <item name="android:background">@drawable/bottom_sheet_bg</item>
+    </style>
+    <style name="Divider">
+        <item name="android:background">#524345</item>
+        <item name="color">#524345</item>
+    </style>
+</resources>

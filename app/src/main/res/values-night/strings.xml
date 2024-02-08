@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bottomSheetTitle">Inspire your friends</string>
+    <string name="copyButtonText">Copy</string>
+    <string name="share_to">Share to</string>
+</resources>
