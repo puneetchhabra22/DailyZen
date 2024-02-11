@@ -27,7 +27,7 @@ import com.major.dailyzen.ui.viewmodels.BottomSheetViewModelFactory
 import com.squareup.picasso.Picasso
 
 
-class BottomSheetFragment(val dailyZenApiResponseItem: DailyZenApiResponseItem) :
+class BottomSheetFragment() :
     BottomSheetDialogFragment() {
 
     lateinit var binding: BottomSheetDialogBinding
@@ -39,13 +39,15 @@ class BottomSheetFragment(val dailyZenApiResponseItem: DailyZenApiResponseItem) 
     lateinit var btnShareDownload: CardView
     lateinit var btnShareMore: CardView
     lateinit var btnClose: ImageButton
-
+    lateinit var dailyZenApiResponseItem: DailyZenApiResponseItem
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        dailyZenApiResponseItem = arguments?.getParcelable("dzItem")!!
 
         bottomSheetFragmentViewModel =
             ViewModelProvider(
@@ -54,7 +56,6 @@ class BottomSheetFragment(val dailyZenApiResponseItem: DailyZenApiResponseItem) 
             ).get(
                 BottomSheetFragmentViewModel::class.java
             )
-
 
         binding = BottomSheetDialogBinding.inflate(inflater,container,false)
         return binding.root

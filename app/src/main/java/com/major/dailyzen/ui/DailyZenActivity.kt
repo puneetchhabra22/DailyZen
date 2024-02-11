@@ -120,7 +120,10 @@ class DailyZenActivity : AppCompatActivity(){
     }
 
     private fun showShareBottomSheet(dailyZenApiResponseItem: DailyZenApiResponseItem){
-        val bottomSheetFargment = BottomSheetFragment(dailyZenApiResponseItem)
+        val bottomSheetFargment = BottomSheetFragment()
+        val bundle = Bundle()
+        bundle.putParcelable("dzItem",dailyZenApiResponseItem)
+        bottomSheetFargment.arguments = bundle
         bottomSheetFargment.show(supportFragmentManager,bottomSheetFargment.tag)
     }
 

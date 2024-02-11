@@ -1,5 +1,9 @@
 package com.major.dailyzen.models
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class DailyZenApiResponseItem(
     val articleUrl: String,
     val author: String,
@@ -14,4 +18,4 @@ data class DailyZenApiResponseItem(
     val themeTitle: String,
     val type: String,
     val uniqueId: String
-)
+) : Parcelable
