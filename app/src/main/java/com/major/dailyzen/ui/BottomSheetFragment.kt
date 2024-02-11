@@ -40,7 +40,6 @@ class BottomSheetFragment() :
     lateinit var btnShareMore: CardView
     lateinit var btnClose: ImageButton
     lateinit var dailyZenApiResponseItem: DailyZenApiResponseItem
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
